@@ -42,39 +42,32 @@
             }
         }
     ?>
-        <div class="inscription">
-                <h1>Connexion</h1><br />
-                <form name="inscription" method="POST" action="connexion.php">
-                <label for="email">Email:</label>
-                <input type="email" name="email" required>
-                <br />
-                <label for="password">Mot de passe:</label>
-                <input type="password" name="password" required>
-                <br />
-                <button type="submit" name="submit">Envoyer</button>
-                </form>
-                <br />
-                <a href="inscription.php">Inscription</a>
+    <section>
+        <div class="form-box">
+            <div class="inscription">
+                    <form name="inscription" method="POST" action="connexion.php">
+                    <h2>Connexion</h2>
+                    <div class="inputbox">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="email" required>
+                    <label for="email">Email :</label>
+                    </div>
+                    <div class="inputbox">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="password" name="password" required>
+                    <label for="password">Mot de passe :</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Se souvenir de moi <a href="#">Mot de passe oublié</a></label>
+                    </div>
+                        <button type="submit" name="submit">Envoyer</button>
+                    <div class="register">
+                        <p>Vous n'avez pas de compte ? <a href="inscription/inscription.php">Inscription</a></p>
+                    </div>
+                    </form>
+            </div>
         </div>
-
-        <!--Footer-->
-        <footer>
-            <p>&copy; Kevin</p>
-            <div class="social-media">
-                <p>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                </p>
-                <p>
-                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                </p>
-                <p>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </p>
-        </div>
-        </footer>
-        <!--Fin footer-->
+    </section>
+        
 </body>
 </html>
