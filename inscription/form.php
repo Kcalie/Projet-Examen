@@ -53,7 +53,7 @@
                     <label for="email">Email :</label>
                     </div>
                     <div class="inputbox">
-                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-lock"></i>
                     <input type="password" name="password" required>
                     <label for="password">Mot de passe :</label>
                     </div>
@@ -62,7 +62,7 @@
                     </div>
                         <button type="submit" name="submit">Envoyer</button>
                     <div class="register">
-                        <p>Vous n'avez pas de compte ? <a href="inscription/inscription.php">Inscription</a></p>
+                        <p>Vous n'avez pas de compte ? <a href="inscription/inscription.php">Inscrivez vous</a></p>
                     </div>
                     </form>
             </div>
