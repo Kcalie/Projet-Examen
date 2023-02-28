@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face 
+{
+    font-family: 'gta';
+    src: url('../police/gta.ttf');
+}
+.gta
+{
+    font-family: 'gta', Courier, monospace;
+    font-size: 1.5em;
+}
+/* Footer */
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+footer
+{
+    margin-top: 100px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position:absolute;        
+    bottom:0;      
+    width:100%;
+}
+footer p
+{
+    margin-left: 15px;
+}
+footer .social-media
+{
+    display: flex;
+}
+footer .social-media p
+{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+.social-media a:hover
+{
+    color: rgb(20, 195, 226);
+}
+
+/* Fin footer */
+
+
+
