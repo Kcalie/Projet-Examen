@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/inscription.css">
     <script src="https://kit.fontawesome.com/22d6814c5f.js" crossorigin="anonymous"></script>
     
-    <title>BDD</title>
+    <title>Inscription</title>
 </head>
 <body>
 <?php
@@ -65,7 +65,9 @@
             }
         }
     ?>
-    
+            <!--Header-->
+            <?php include ('../assets/includes/header.php'); ?>
+
     <div class="inscription">
         <h1>Inscription</h1><br />
         <form name="inscription" method="POST" action="inscription_traitement.php">
@@ -86,24 +88,8 @@
         </form>
     </div>
 
-    <!--Footer-->
-    <footer>
-        <p>&copy; Kevin</p>
-        <div class="social-media">
-            <p>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-            </p>
-            <p>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-            </p>
-            <p>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </p>
-        </div>
-    </footer>
-    <!--Fin footer-->
+        <!--Footer-->
+        <?php include ('../assets/includes/footer.php'); ?>
+        <script src="assets/js/script.js"></script>
 </body>
 </html>

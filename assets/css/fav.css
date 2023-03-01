@@ -17,7 +17,10 @@ body
     padding: 0%;
     background-color: #e4d9ba;
 }
-
+header
+{
+    width: 100%;
+}
 /* Barre de navigation */
 nav
 {
@@ -67,24 +70,97 @@ nav .onglets input
     outline: none;
     background-color: #f2f2f2;
 }
+/*Menu Deroulant*/
+.dropdown{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.dropdown::before
+{
+    content: '';
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    width: 12px;
+    height: 2px;
+    background: #555;
+    z-index: 10;
+    transform: rotate(40deg);
+    transition: 0.5s;
+}
+.dropdown.active::before
+{
+    right: 20px;
+}
+.dropdown::after
+{
+    content: '';
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    width: 12px;
+    height: 2px;
+    background: #555;
+    z-index: 10;
+    transform: rotate(-40deg);
+    transition: 0.5s;
+}
+.dropdown.active::after
+{
+    right: 28px;
+}
+.dropdown .option
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 95%;
+    top: 45px;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+.dropdown.active .option
+{
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown .option a
+{
+    padding: 12px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.dropdown .option a:hover /*FONCTIONNE PLUS ?????*/ 
+{
+    background-color: #2b2a2a; 
+    color: rgb(10, 114, 199);
+}
+.bars i{
+    padding: 5px;
+}
 /* Fin barre de navigation */
 
 
 /* Header */
-header
+.top
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-header h1
+.top h1
 {
     font-size: 50px;
     max-width: 500px;
     text-align: center;
 }
-header img
+.top img
 {
     padding: 15px 20px;
     border: none;
@@ -186,19 +262,25 @@ footer .social-media p
 
 
 /* Media queries */
-@media screen and (max-width: 640px) 
+@media screen and (max-width: 600px) 
 {
     nav .onglets .link, nav h1
     {
         display: none;
     }
-    .cards .card
+    nav 
     {
-        margin-left: 10px;
+        display: flex;
+        justify-content: space-evenly;
     }
-    .cards .card img
+
+}
+@media screen and (min-width:1000px)
+{
+    .dropdown
     {
-        width: 300px;
+        display: none;
     }
 }
-/* Fin media queries */
+
+/* Fin Media queries */

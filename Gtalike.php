@@ -10,37 +10,15 @@
 
     </head>
     <body>
+            <!--Header-->
+            <?php include ('assets/includes/header.php'); ?>
 
-        <!--Barre de navigation-->
-        <nav>
-            <h1>Menu</h1>
-            <div class="onglets">
 
-                <a class="link" href="index.html">Home</a>
-                <a class="link" href="Rockstar.html">Rockstar</a>
-                <a class="link" href="Gtalike.html">GtaLike</a>
-                <a class="link" href="Sports.html">Sports</a>
-                <a class="link" href="Others.html">Others</a>
-                <a class="link" href="Favoris.html">Favorites</a>
-                <form>
-                    <input type="search" placeholder="Search">
-                </form>
-                <p>
-                    <i class="fa-solid fa-heart"></i>
-                </p>
-                <p>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </p>
-            </div>
-        </nav>
-        <!--Fin barre de navigation-->
-
-        <!--Header-->
-        <header>
+        <div class="top">
             <h1><span class="gta">GTA Like</span></h1>
             <img src="assets/images/gtalike/logolike.png" alt="">
-        </header>
-        <!--Fin Header-->
+        </div>
+
 
         <!--Section Principale-->
         <section class="main">
@@ -177,27 +155,9 @@
         </section>
         <!--Fin section Principale-->
 
-        <!--Footer-->
-        <footer>
-
-            <p>&copy; Kevin</p>
-            <div class="social-media">
-                <p>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                </p>
-                <p>
-                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
-                </p>
-                <p>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </p>
-            </div>
-
-        </footer>
-        <!--Fin footer-->
+    <!--Footer-->
+    <?php include ('assets/includes/footer.php'); ?>
+    <script src="assets/js/script.js"></script>
 
     </body>
 </html>

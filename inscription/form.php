@@ -42,6 +42,8 @@
             }
         }
     ?>
+            <!--Header-->
+            <?php include ('../assets/includes/header.php'); ?>
     <section>
         <div class="form-box">
             <div class="inscription">
@@ -68,6 +70,8 @@
             </div>
         </div>
     </section>
-        
+        <!--Footer-->
+        <?php include ('../assets/includes/footer.php'); ?>
+        <script src="assets/js/script.js"></script>
 </body>
 </html>
