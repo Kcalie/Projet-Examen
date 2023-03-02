@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/inscription.css">
     <script src="https://kit.fontawesome.com/22d6814c5f.js" crossorigin="anonymous"></script>
+    
     <title>connexion</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
         }
     ?>
             <!--Header-->
-            <?php include ('../assets/includes/header.php'); ?>
+            <?php include ('../assets/includes/headerinscription.php'); ?>
     <section>
         <div class="form-box">
             <div class="inscription">
@@ -72,6 +73,6 @@
     </section>
         <!--Footer-->
         <?php include ('../assets/includes/footer.php'); ?>
-        <script src="assets/js/script.js"></script>
+        <script src="../assets/js/script.js"></script>
 </body>
 </html>
