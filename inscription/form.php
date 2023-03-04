@@ -10,39 +10,44 @@
     <title>connexion</title>
 </head>
 <body>
-    <?php
-        if(isset($_GET['login_err']))
-        {
-            $err = htmlspecialchars($_GET['login_err']);
+<?php
+    require_once 'config.php';
 
-            switch($err)
-            {
-                case 'password';
-                ?>
-                    <div class="alert">
-                        <strong>Erreur</strong> mot de passe incorrect
-                    </div>
-                <?php
-                break;
+    if(isset($_POST['email']) && isset($_POST['password'])) {
+        $email = htmlspecialchars($_POST['email']);
+        $password = htmlspecialchars($_POST['password']);
 
-                case 'email';
-                ?>
-                    <div class="alert">
-                        <strong>Erreur</strong> email incorrect
-                    </div>
-                <?php
-                break;
-
-                case 'already';
-                ?>
-                    <div class="alert">
-                        <strong>Erreur</strong> compte non existant 
-                    </div>
-                <?php
-                break;
-            }
+        // Vérifier que l'e-mail est valide
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            header('location:connexion.php?login_err=email');
+            exit;
         }
-    ?>
+
+        // Vérifier si l'utilisateur existe dans la base de données
+        $check = $bdd->prepare('SELECT id, password FROM utilisateurs WHERE email = ?');
+        $check->execute(array($email));
+        $data = $check->fetch();
+        $row = $check->rowCount();
+
+        if($row == 1) {
+            // Vérifier que le mot de passe est correct
+            if(password_verify($password, $data['password'])) {
+                // Authentification réussie, créer une session pour l'utilisateur
+                session_start();
+                $_SESSION['user_id'] = $data['id'];
+                header('location:index.php');
+                exit;
+            } else {
+                header('location:connexion.php?login_err=password');
+                exit;
+            }
+        } else {
+            header('location:connexion.php?login_err=already');
+            exit;
+        }
+    }
+?>
+
             <!--Header-->
             <?php include ('../assets/includes/headerinscription.php'); ?>
     <section>

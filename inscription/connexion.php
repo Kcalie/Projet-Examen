@@ -17,23 +17,34 @@ if(isset($_POST['email']) && isset($_POST['password']))
     {
         if(filter_var($email, FILTER_VALIDATE_EMAIL))
         {
-            $password = sha1(md5($_POST['password']));
-
-            if($data['password'] === $password)
+            $hashed_password = $data['password'];
+            if(password_verify($password, $hashed_password))
             {
                 $_SESSION['user'] = $data['pseudo'];
                 header('location:landing.php');
 
             }
-            else header('location:form.php?login_err=password');
+            else 
+            {
+            header('location:form.php?login_err=password');
+            }
 
         }
-        else header('location:form.php?login_err=email'); 
+        else 
+        {
+        header('location:form.php?login_err=email'); 
+        }
 
     }
-    else header('location:form.php?login_err=already'); 
+    else 
+    {
+    header('location:form.php?login_err=already');
+    } 
 
 }
-else header('location:form.php');
+else 
+{
+header('location:form.php');
+}
 
 ?>

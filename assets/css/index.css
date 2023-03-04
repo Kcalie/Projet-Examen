@@ -226,7 +226,10 @@ footer .social-media p
     color: rgb(20, 195, 226);
 }
 /* Fin footer */
-
+.xdebug-var-dump
+{
+    color: #fff;
+}
 /* Media queries */
 @media screen and (max-width: 600px) 
 {
