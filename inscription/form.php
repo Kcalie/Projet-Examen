@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/inscription.css">
-    <script src="https://kit.fontawesome.com/22d6814c5f.js" crossorigin="anonymous"></script>
-    
-    <title>connexion</title>
-</head>
-<body>
 <?php
     require_once 'config.php';
 
@@ -48,8 +36,25 @@
     }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/inscription.css">
+    <script src="https://kit.fontawesome.com/22d6814c5f.js" crossorigin="anonymous"></script>
+    
+    <title>Connexion</title>
+</head>
+<body>
             <!--Header-->
-            <?php include ('../assets/includes/headerinscription.php'); ?>
+            <header>
+                <?php include ('../assets/includes/headerinscription.php'); ?>
+            </header>
+            <!--Fin Header-->
+
+    <!--Formulaire de Connexion-->
     <section>
         <div class="form-box">
             <div class="inscription">
@@ -76,8 +81,13 @@
             </div>
         </div>
     </section>
+    <!--Fin Formulaire-->
+
         <!--Footer-->
-        <?php include ('../assets/includes/footer.php'); ?>
+        <footer>
+            <?php include ('../assets/includes/footer.php'); ?>
+        </footer>
+        <!--Fin Footer-->
         <script src="../assets/js/script.js"></script>
 </body>
 </html>

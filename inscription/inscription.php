@@ -42,8 +42,12 @@
     ?>
 
     <!-- Header -->
-    <?php include ('../assets/includes/headerinscription.php'); ?>
+    <header>
+        <?php include ('../assets/includes/headerinscription.php'); ?>
+    </header>
+    <!-- Header -->
 
+    <!-- Formulaire d'inscription -->
     <section>
         <div class="form-box">
             <div class="inscription">
@@ -86,9 +90,14 @@
             </div>
         </div>
     </section>
+    <!-- Fin Formulaire -->
+
 
     <!-- Footer -->
-    <?php include ('../assets/includes/footer.php'); ?>
+    <footer>
+        <?php include ('../assets/includes/footer.php'); ?>
+    </footer>
+
 
     <script src="../assets/js/script.js"></script>
 </body>

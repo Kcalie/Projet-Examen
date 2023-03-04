@@ -35,12 +35,7 @@ if(isset($_POST['pseudo'], $_POST['email'], $_POST['password'], $_POST['password
 
     if($row === 0) {
         // Insertion de l'utilisateur dans la base de données
-        $insert = $bdd->prepare('INSERT INTO `utilisateurs` SET
-                                            pseudo = :pseudo,
-                                            email = :email,
-                                            password = :password,
-                                            date_d\'inscription = CURDATE()
-    ');
+        $insert = $bdd->prepare('INSERT INTO utilisateurs(pseudo, email, password) VALUES(:pseudo, :email, :password)');
         $insert->execute(array(
             'pseudo'=> $pseudo,
             'email' => $email,
