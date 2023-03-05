@@ -1,29 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-@font-face 
-{
+@font-face{
     font-family: 'gta';
     src: url('../police/gta.ttf');
 }
-.gta
-{
+.gta{
     font-family: 'gta', Courier, monospace;
     font-size: 1.5em;
 }
-body
-{
+body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0%;
     background-color: #e8e5c4;
 }
-header
-{
+header{
     width: 100%;
 }
 /* Barre de navigation */
-nav
-{
+nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -32,17 +27,14 @@ nav
     position: sticky;
     top: 0;
 }
-nav h1
-{
+nav h1{
    font-size: 20px; 
 }
-nav .onglets
-{
+nav .onglets{
     display: flex;
     flex-wrap: wrap;
 }
-nav .onglets a
-{
+nav .onglets a{
     font-size: 17px;
     margin-right: 10px;
     margin-top: 18px;
@@ -50,19 +42,16 @@ nav .onglets a
     color: black;
     text-decoration: none;
 }
-nav .onglets a:hover
-{
+nav .onglets a:hover{
     color: rgb(10, 114, 199);
 }
-nav .onglets p
-{
+nav .onglets p{
     font-size: 17px;
     margin-right: 10px;
     margin-top: 18px;
     cursor: pointer;
 }
-nav .onglets input
-{
+nav .onglets input{
     margin: 8px 20px;
     padding: 15px;
     border-radius: 30px;
@@ -76,8 +65,7 @@ nav .onglets input
     border: 1px solid black;
     border-radius: 4px;
 }
-.dropdown::before
-{
+.dropdown::before{
     content: '';
     position: absolute;
     top: 23px;
@@ -89,12 +77,10 @@ nav .onglets input
     transform: rotate(40deg);
     transition: 0.5s;
 }
-.dropdown.active::before
-{
+.dropdown.active::before{
     right: 20px;
 }
-.dropdown::after
-{
+.dropdown::after{
     content: '';
     position: absolute;
     top: 23px;
@@ -106,12 +92,10 @@ nav .onglets input
     transform: rotate(-40deg);
     transition: 0.5s;
 }
-.dropdown.active::after
-{
+.dropdown.active::after{
     right: 28px;
 }
-.dropdown .option
-{
+.dropdown .option{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -124,19 +108,16 @@ nav .onglets input
     visibility: hidden;
     opacity: 0;
 }
-.dropdown.active .option
-{
+.dropdown.active .option{
     visibility: visible;
     opacity: 1;
 }
-.dropdown .option a
-{
+.dropdown .option a{
     padding: 12px 20px;
     cursor: pointer;
     text-decoration: none;
 }
-.dropdown .option a:hover /*FONCTIONNE PLUS ?????*/ 
-{
+.dropdown .option a:hover{
     background-color: #2b2a2a; 
     color: rgb(10, 114, 199);
 }
@@ -147,21 +128,18 @@ nav .onglets input
 
 
 /* Header */
-.top
-{
+.top{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.top h1
-{
+.top h1{
     font-size: 50px;
     max-width: 500px;
     text-align: center;
 }
-.top img
-{
+.top img{
     padding: 15px 20px;
     border: none;
     width: 4%;
@@ -172,8 +150,7 @@ nav .onglets input
 /* Fin Header */
 
 /* Section principale */
-.main
-{
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,29 +159,24 @@ nav .onglets input
 }
 
 /* Cards */
-.cards
-{
+.cards{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.cards .card
-{
+.cards .card{
     margin-right: 20px;
     cursor: pointer;
 }
-.cards .card img
-{
+.cards .card img{
     width: 230px;
 }
-.cards .card .card-header
-{
+.cards .card .card-header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.cards .card .card-body p
-{
+.cards .card .card-body p{
     margin-top: -22px;
     display: flex;
     flex-wrap: wrap;
@@ -213,12 +185,10 @@ nav .onglets input
 /* Fin cards */
 
 /* Video */
-.main .video
-{
+.main .video{
     margin-top: 80px;
 }
-.main .video .iframe
-{
+.main .video .iframe{
     border: none;
     border-radius: 10px;
     width: 100%;
@@ -229,8 +199,7 @@ nav .onglets input
 
 
 /* Footer */
-footer
-{
+footer{
     margin-top: 100px;
     background-color: #000;
     color: #fff;
@@ -239,12 +208,10 @@ footer
     justify-content: space-between;
     padding: 30px;
 }
-footer .social-media
-{
+footer .social-media{
     display: flex;
 }
-footer .social-media p
-{
+footer .social-media p{
     margin-right: 15px;
     border: 1px solid #fff;
     border-radius: 100%;
@@ -253,16 +220,14 @@ footer .social-media p
     width: 20px;
     cursor: pointer;
 }
-.social-media a:hover
-{
+.social-media a:hover{
     color: rgb(20, 195, 226);
 }
 /* Fin footer */
 
 
 /* Media queries */
-@media screen and (max-width: 600px) 
-{
+@media screen and (max-width: 600px){
     nav .onglets .link, nav h1
     {
         display: none;
@@ -272,10 +237,22 @@ footer .social-media p
         display: flex;
         justify-content: space-evenly;
     }
+    .gta
+    {
+        font-family: 'gta', Courier, monospace;
+        font-size: 1em;
+    }
+    .top img
+    {
+        padding: 15px 20px;
+        border: none;
+        width: 14%;
+        border-radius: 5px;
+        outline: none;
+    }
 
 }
-@media screen and (min-width:1000px)
-{
+@media screen and (min-width:1000px){
     .dropdown
     {
         display: none;

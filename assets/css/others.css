@@ -273,6 +273,19 @@ footer .social-media p
         display: flex;
         justify-content: space-evenly;
     }
+    .gta
+    {
+        font-family: 'gta', Courier, monospace;
+        font-size: 1em;
+    }
+    .top img
+    {
+        padding: 15px 20px;
+        border: none;
+        width: 14%;
+        border-radius: 5px;
+        outline: none;
+    }
 
 }
 @media screen and (min-width:1000px)

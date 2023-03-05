@@ -1,3 +1,4 @@
+// Menu Deroulant
 let dropdown = document.querySelector('.dropdown');
 dropdown.onclick = function()
 {
