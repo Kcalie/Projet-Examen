@@ -75,7 +75,7 @@
                     </div>
                         <button type="submit" name="submit">Envoyer</button>
                     <div class="register">
-                        <p>Vous n'avez pas de compte ? <a href="inscription/inscription.php">Inscrivez vous</a></p>
+                        <p>Vous n'avez pas de compte ? <a href="inscription.php">Inscrivez vous</a></p>
                     </div>
                     </form>
             </div>
