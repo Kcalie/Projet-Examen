@@ -298,6 +298,9 @@ footer .social-media p{
         display: flex;
         justify-content: space-evenly;
     }
+    .logomenu img{
+        display: none;
+    }
     section{
         display: flex;
         justify-content: center;
