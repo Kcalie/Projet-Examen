@@ -67,6 +67,15 @@ nav .onglets input{
     outline: none;
     background-color: #f2f2f2;
 }
+/*Icon connexion*/
+nav a i{
+    font-size: 25px;
+    background: palevioletred;
+    color: #fff;
+    background-size: 40px;
+    border-radius: 40%;
+}
+/*Icon Connexion Fin*/
 
 /*Menu Deroulant*/
 .dropdown{
