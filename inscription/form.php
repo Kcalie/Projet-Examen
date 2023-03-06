@@ -58,26 +58,29 @@
     <section>
         <div class="form-box">
             <div class="inscription">
-                    <form name="inscription" method="POST" action="connexion.php">
-                    <h2>Connexion</h2>
+                <form name="inscription" method="POST" action="connexion.php">
+                <h2>Connexion</h2>
                     <div class="inputbox">
                     <i class="fa-regular fa-envelope"></i>
                     <input type="email" name="email" required>
                     <label for="email">Email :</label>
                     </div>
+
                     <div class="inputbox">
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" name="password" required>
                     <label for="password">Mot de passe :</label>
                     </div>
+
                     <div class="forget">
                         <label for=""><input type="checkbox">Se souvenir de moi <a href="#">Mot de passe oublié</a></label>
                     </div>
+
                         <button type="submit" name="submit">Envoyer</button>
                     <div class="register">
                         <p>Vous n'avez pas de compte ? <a href="inscription.php">Inscrivez vous</a></p>
                     </div>
-                    </form>
+                </form>
             </div>
         </div>
     </section>

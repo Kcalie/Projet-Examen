@@ -161,6 +161,7 @@
         </section>
         <!--Fin section Principale-->
 
+
     <!--Footer-->
     <?php include ('assets/includes/footer.php'); ?>
     <script src="assets/js/script.js"></script>

@@ -33,6 +33,11 @@ nav{
     position: sticky;
     top: 0;
 }
+.logomenu img{
+    width: 60px;
+    height: auto;
+    margin-left: 30px;
+}
 nav h1{
    font-size: 20px; 
 }
@@ -52,7 +57,7 @@ nav .onglets a:hover{
     color: rgb(10, 114, 199);
 }
 nav .onglets p{
-    font-size: 17px;
+    font-size: 20px;
     margin-right: 10px;
     margin-top: 18px;
     cursor: pointer;
@@ -132,40 +137,6 @@ nav .onglets input{
     padding: 5px;
 }
 
-
-/* Footer */
-footer{
-    background-color: black;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width:100%;
-}
-footer p{
-    margin-left: 15px;
-}
-footer .social-media{
-    display: flex;
-}
-footer .social-media p{
-    margin-right: 15px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    padding: 5px;
-    text-align: center;
-    width: 20px;
-    cursor: pointer;
-}
-.social-media a:visited{
-    color: #fff;
-}
-.social-media a:hover{
-    color: rgb(20, 195, 226);
-}
-/* Fin footer */
-/*Fin Includes*/
-
 section{
     display: flex;
     justify-content: center;
@@ -186,9 +157,11 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(110, 12, 12, 0.56) 0px 2px 12px 4px;
 }
 h2{
-    font-size: 2em;
+    font-family: 'gta', Courier, monospace;
+    font-size: 3em;
     color: #fff;
     text-align: center;
 }
@@ -200,20 +173,14 @@ h2{
 }
 .inputbox label{
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
     font-size: 1em;
     pointer-events: none;
-    transition: 1.2s;/*temps de transition des labels au click*/
 }
 
-/*emplacement des labels au click*/
-input:focus ~ label,
-input:focus ~ :valid{
-    bottom: -35px;
-}
 .inputbox input{
     width: 100%;
     height: 50px;
@@ -226,10 +193,10 @@ input:focus ~ :valid{
 }
 .inputbox i{
     position: absolute;
+    bottom: 70%;
     right: 8px;
     color: #fff;
     font-size: 1.2em;
-    top: 20px;
 }
 .forget{
     margin: -15px 0 15px;
@@ -265,15 +232,60 @@ button{
     color: #fff;
     text-align: center;
     margin: 25px 0 10px;
+    border-top: 2px solid darkred;
 }
 .register p a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+    margin-top: 10px;
 }
 .register p a:hover{
     text-decoration: underline;
 }
+.form-box2{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(110, 12, 12, 0.56) 0px 2px 12px 4px;
+}
+/* Footer */
+footer{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+}
+footer p{
+    margin-left: 15px;
+}
+footer .social-media{
+    display: flex;
+}
+footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+.social-media a:visited{
+    color: #fff;
+}
+.social-media a:hover{
+    color: rgb(20, 195, 226);
+}
+/* Fin footer */
 
 /* Media queries */
 @media screen and (max-width: 600px){

@@ -49,38 +49,38 @@
 
     <!-- Formulaire d'inscription -->
     <section>
-        <div class="form-box">
+        <div class="form-box2">
             <div class="inscription">
-                <h1>Inscription</h1>
                 <form name="inscription" method="POST" action="inscription_traitement.php">
+                <h2>Inscription</h2>
                     <div class="inputbox">
                         <i class="fa-regular fa-user"></i>
-                        <label for="login">Pseudo</label>
                         <input type="text" name="pseudo" required>
+                        <label for="login">Pseudo :</label>
                     </div>
 
                     <div class="inputbox">
                         <i class="fa-regular fa-envelope"></i>
-                        <label for="email">Email:</label>
                         <input type="email" name="email" required>
+                        <label for="email">Email :</label>
                     </div>
 
                     <div class="inputbox">
                         <i class="fa-solid fa-lock"></i>
-                        <label for="password">Mot de passe:</label>
                         <input type="password" name="password" required>
+                        <label for="password">Mot de passe :</label>
                     </div>
 
                     <div class="inputbox">
                         <i class="fa-solid fa-unlock"></i>
-                        <label for="password2">Répéter Mot de passe:</label>
                         <input type="password" name="password2" required>
+                        <label for="password2">Répéter Mot de passe :</label>
                     </div>
 
                     <button type="submit" name="submit">Envoyer</button>
 
                     <div class="register">
-                        <p>Vous avez un compte ? <a href="inscription/form.php">Connectez-vous</a></p>
+                        <p>Vous avez un compte ? <a href="form.php">Connectez-vous</a></p>
                     </div>
                 </form>
 

@@ -24,7 +24,9 @@
       
 
         <main>
-            <!--Slider-->
+            
+        <!--Slider-->
+
 
 
         </main>

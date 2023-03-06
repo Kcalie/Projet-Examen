@@ -1,7 +1,7 @@
 <header>
             <!--Barre de navigation-->
             <nav>    
-                <h1>Menu</h1>
+                <div class="logomenu"><img src="../assets/images/logo.png" alt=""></div>
                 <!--Menu Deroulant Responsive-->
                 <div class="dropdown">
                     <div class="bars"><i class="fa-solid fa-bars"></i></div>
