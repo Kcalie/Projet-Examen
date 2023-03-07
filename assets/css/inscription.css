@@ -137,6 +137,7 @@ nav .onglets input{
     padding: 5px;
 }
 
+/*Formulaire*/
 section{
     display: flex;
     justify-content: center;
@@ -182,7 +183,7 @@ h2{
 }
 
 .inputbox input{
-    width: 100%;
+    width: 85%;
     height: 50px;
     background: transparent;
     border: none;
@@ -193,7 +194,7 @@ h2{
 }
 .inputbox i{
     position: absolute;
-    bottom: 70%;
+    bottom: 75%;
     right: 8px;
     color: #fff;
     font-size: 1.2em;
@@ -255,6 +256,7 @@ button{
     align-items: center;
     box-shadow: rgba(110, 12, 12, 0.56) 0px 2px 12px 4px;
 }
+
 /* Footer */
 footer{
     background-color: black;
@@ -304,7 +306,6 @@ footer .social-media p{
     section{
         display: flex;
         justify-content: center;
-
         width: 100%;
         background-color: #000;
         background: url(../images/wallpapers/mafia11.jpg)no-repeat;
