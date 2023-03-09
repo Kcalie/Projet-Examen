@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/like.css">
         <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/header.css">
         <script src="https://kit.fontawesome.com/22d6814c5f.js" crossorigin="anonymous"></script>
         <title>Jeux</title>
 

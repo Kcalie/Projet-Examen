@@ -9,9 +9,6 @@
                         <a class="link" href="index.php">Home</a>
                         <a class="link" href="Rockstar.php">Rockstar</a>
                         <a class="link" href="Gtalike.php">GtaLike</a>
-                        <a class="link" href="Sports.php">Sports</a>
-                        <a class="link" href="Others.php">Others</a>
-                        <a class="link" href="Favoris.php">Favorites</a>
                         <a class="link" href="contact/contact.php">Contact</a>
                         <a class="link" href="inscription/form.php">Connexion</a>
                     </div>
@@ -21,9 +18,6 @@
                     <a class="link" href="index.php">Home</a>
                     <a class="link" href="Rockstar.php">Rockstar</a>
                     <a class="link" href="Gtalike.php">GtaLike</a>
-                    <a class="link" href="Sports.php">Sports</a>
-                    <a class="link" href="Others.php">Others</a>
-                    <a class="link" href="Favoris.php">Favorites</a>
                     <a class="link" href="contact/contact.php">Contact</a>
                     <a class="link" href="inscription/form.php">Connexion</a>
                     <form>

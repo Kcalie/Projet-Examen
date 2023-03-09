@@ -1,0 +1,11 @@
+Couleur Logo
+
+pink = #ff325f
+
+LightBlue = #0096ff
+
+DarkBlue = #001d5f
+
+Yellow = #fcee21
+
+Green = #83e03f

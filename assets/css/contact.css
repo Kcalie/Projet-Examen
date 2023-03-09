@@ -19,125 +19,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #000;
 }
-/*Includes*/
-header{
-    width: 100%;
-}
-
-
-/* Barre de navigation */
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-}
-.logomenu img{
-    width: 60px;
-    height: auto;
-    margin-left: 30px;
-}
-nav h1{
-   font-size: 20px; 
-}
-nav .onglets{
-    display: flex;
-    flex-wrap: wrap;
-}
-nav .onglets a{
-    font-size: 17px;
-    margin-right: 10px;
-    margin-top: 18px;
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-}
-nav .onglets a:hover{
-    color: rgb(10, 114, 199);
-}
-nav .onglets p{
-    font-size: 20px;
-    margin-right: 10px;
-    margin-top: 18px;
-    cursor: pointer;
-}
-nav .onglets input{
-    margin: 8px 20px;
-    padding: 15px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    background-color: #f2f2f2;
-}
-
-/*Menu Deroulant*/
-.dropdown{
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-.dropdown::before{
-    content: '';
-    position: absolute;
-    top: 23px;
-    right: 28px;
-    width: 12px;
-    height: 2px;
-    background: #555;
-    z-index: 10;
-    transform: rotate(40deg);
-    transition: 0.5s;
-}
-.dropdown.active::before{
-    right: 20px;
-}
-.dropdown::after{
-    content: '';
-    position: absolute;
-    top: 23px;
-    right: 20px;
-    width: 12px;
-    height: 2px;
-    background: #555;
-    z-index: 10;
-    transform: rotate(-40deg);
-    transition: 0.5s;
-}
-.dropdown.active::after{
-    right: 28px;
-}
-.dropdown .option{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 95%;
-    top: 45px;
-    background: #fff;
-    box-shadow: 0 30px 30px rgba(0,0,0,0.05);
-    border-radius: 10px;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-}
-.dropdown.active .option{
-    visibility: visible;
-    opacity: 1;
-}
-.dropdown .option a{
-    padding: 12px 20px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.dropdown .option a:hover{
-    background-color: #2b2a2a; 
-    color: rgb(10, 114, 199);
-}
-.bars i{
-    padding: 5px;
-}
 .container{
     position: relative;
     display: flex;
@@ -154,7 +35,7 @@ nav .onglets input{
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/wallpapers/mafia1.jpg) no-repeat center;
+    background: url(../images/wallpapers/sa01.jpg) no-repeat center;
     background-size: cover;
     z-index: -1;
 }
@@ -191,7 +72,7 @@ h2:after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: rgb(177, 27, 27);
+    background-color: #ff325f;
 }
 .field{
     width: 100%;
@@ -209,7 +90,7 @@ h2:after{
 }
 .field:focus{
     background-color: #fff;
-    border: 2px solid rgba(30, 85, 250, 0.47);
+    border: 2px solid #83e03f;
 }
 .area{
     min-height: 150px;
@@ -218,7 +99,7 @@ h2:after{
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color: rgb(177, 27, 27);
+    background-color: #0096ff;
     border-radius: 10px;
     cursor: pointer;
     outline: none;
@@ -227,12 +108,8 @@ h2:after{
     transition: .3s;
 }
 .btn:hover{
-    background-color: darkred;
+    background-color: #001d5f;
 }
-
-/* Footer */
-
-/* Fin footer */
 
 /* Media queries */
 @media screen and (max-width: 600px){
